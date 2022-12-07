@@ -1,0 +1,113 @@
+<html>
+	<head>	
+		<meta name="viewport" content="width=device-width, initial-scale=0.1">
+		<meta charset="UTF-8">
+		<title>month</title>
+
+		<style>
+			body {background-color: #fffff; margin: 0; padding:0; box-sizing: border-box; justify-content: center; align-items: center;} 
+			h{font-family: helvetica; font-size: 50; margin-top: 0; margin-bottom: 2em; color: black;}
+			
+			nav {width: 100%; overflow-y: auto; background-color: #000000;}
+			nav ul{list-style-type: none; margin: 0; left: 50%;}
+			nav ul li{display: inline; float: right;  margin: 0px 20px; padding-top: 15px;}	nav ul li1{display: inline; float: left; color: white;  margin: 0px 20px; padding-top: 15px; font-size: 20px; }	
+			nav ul li a{color: #fdfbfb; font-size: 20px; text-decoration: none; font-family: Arial Unicode MS; } 
+			nav ul li a:hover {background: #ffffff; color: black; transition: 0.5s; text-transform: uppercase; padding: 15px;}
+			
+			.box {display: flex; padding: 0 4px; flex-wrap: wrap; }
+			.box img{margin-top: 8px; vertical-align: middle; text-align: center;}
+			.footer {width: 100%; height: auto; margin: auto; background: #000000; padding: 20px 0px;}
+			.icons {width: 100%; height: auto; margin: auto;}
+			.icons ul{margin: 0; padding: 0; text-align: right;}
+			.icons ul li {display: inline;}
+			
+			.container{ width: 95%; overflow: hidden; background: #f6f1ed; margin: 20px auto; padding: 20px;}
+			.container ul{padding: 0px; margin: 0px; }
+			.container ul li {list-style: none; float: left; width: 20%; height: 300px; background: #ffffff; margin: 40px 10px 0px 40px;box-sizing: border-box; border: 2px solid white;}
+			.container ul li:hover {opacity: 0.9;}
+			.container ul li .title{width: 100%; height: 50px; line-height: 50px; background: #000000; text-align: center; font-family: papyrus; color: white;}
+
+			@media screen and (max-width: 1200px){
+				.container ul li {
+					width: 40%; margin: 20px;
+				}
+			}
+
+		</style>
+	</head>
+
+		 <body> 
+			<header> 		
+				<nav role="full-horizontal"> <center>
+					<ul>   	
+						<li><a href="year.html">year</a></li>
+						<li><a href="ndex.html">week</a></li>
+						<li><a href="bout.html">day</a></li>
+						<li><a href="index.html">home</a></li>
+						<li1> Scheduled </li1>
+					</ul>
+				</center></nav></body>
+	
+			
+
+			<p>`</p><p>`</p>
+			<center><h>Your Monthly Spread</h></center>
+			<p>`</p><p>` </p> 
+
+			<!-- A way for users to input the month they are planning for-->
+			<center>MONTH : <input type="text" name="year"></center>
+
+			<!--Class representing all the days in a month-->
+			<div class="container" >
+				<ul>
+					<li><div class="title"> 1 <br><br><input type="text" name="jan"> <br><br> <input type="text" name="jan"> <br><br> <input type="text" name="jan"> </div></li>
+					<li><div class="title"> 2 <br><br><input type="text" name="feb"> <br><br> <input type="text" name="feb"> <br><br> <input type="text" name="feb"> </div></li>
+					<li><div class="title"> 3 <br><br><input type="text" name="mar"> <br><br> <input type="text" name="mar"> <br><br> <input type="text" name="mar"> </div></li>
+					<li><div class="title"> 4 <br><br><input type="text" name="apr"> <br><br> <input type="text" name="apr"> <br><br> <input type="text" name="apr"> </div></li>
+					<li><div class="title"> 5 <br><br><input type="text" name="may"> <br><br> <input type="text" name="may"> <br><br> <input type="text" name="may"> </div></li>
+					<li><div class="title"> 6 <br><br><input type="text" name="jun"> <br><br> <input type="text" name="jun"> <br><br> <input type="text" name="jun"> </div></li>
+					<li><div class="title"> 7 <br><br><input type="text" name="jly"> <br><br> <input type="text" name="jly"> <br><br> <input type="text" name="jly"> </div></li>
+					<li><div class="title"> 8 <br><br><input type="text" name="aug"> <br><br> <input type="text" name="aug"> <br><br> <input type="text" name="aug"> </div></li>
+					<li><div class="title"> 9 <br><br><input type="text" name="sep"> <br><br> <input type="text" name="sep"> <br><br> <input type="text" name="sep"> </div></li>
+					<li><div class="title"> 10 <br><br><input type="text" name="oct"> <br><br> <input type="text" name="oct"> <br><br> <input type="text" name="oct"> </div></li>
+					<li><div class="title"> 11 <br><br><input type="text" name="nov"> <br><br> <input type="text" name="nov"> <br><br> <input type="text" name="nov"> </div></li>
+					<li><div class="title"> 12 <br><br><input type="text" name="dec"> <br><br> <input type="text" name="dec"> <br><br> <input type="text" name="dec"> </div></li>
+					<li><div class="title"> 13 <br><br><input type="text" name="jan"> <br><br> <input type="text" name="jan"> <br><br> <input type="text" name="jan"> </div></li>
+					<li><div class="title"> 14 <br><br><input type="text" name="jan"> <br><br> <input type="text" name="jan"> <br><br> <input type="text" name="jan"> </div></li>
+					<li><div class="title"> 15 <br><br><input type="text" name="jan"> <br><br> <input type="text" name="jan"> <br><br> <input type="text" name="jan"> </div></li>
+					<li><div class="title"> 16 <br><br><input type="text" name="jan"> <br><br> <input type="text" name="jan"> <br><br> <input type="text" name="jan"> </div></li>
+					<li><div class="title"> 17 <br><br><input type="text" name="jan"> <br><br> <input type="text" name="jan"> <br><br> <input type="text" name="jan"> </div></li>
+					<li><div class="title"> 18 <br><br><input type="text" name="jan"> <br><br> <input type="text" name="jan"> <br><br> <input type="text" name="jan"> </div></li>
+					<li><div class="title"> 19 <br><br><input type="text" name="jan"> <br><br> <input type="text" name="jan"> <br><br> <input type="text" name="jan"> </div></li>
+					<li><div class="title"> 20 <br><br><input type="text" name="feb"> <br><br> <input type="text" name="feb"> <br><br> <input type="text" name="feb"> </div></li>
+					<li><div class="title"> 21 <br><br><input type="text" name="feb"> <br><br> <input type="text" name="feb"> <br><br> <input type="text" name="feb"> </div></li>
+					<li><div class="title"> 22 <br><br><input type="text" name="feb"> <br><br> <input type="text" name="feb"> <br><br> <input type="text" name="feb"> </div></li>
+					<li><div class="title"> 23 <br><br><input type="text" name="feb"> <br><br> <input type="text" name="feb"> <br><br> <input type="text" name="feb"> </div></li>
+					<li><div class="title"> 24 <br><br><input type="text" name="feb"> <br><br> <input type="text" name="feb"> <br><br> <input type="text" name="feb"> </div></li>
+					<li><div class="title"> 25 <br><br><input type="text" name="feb"> <br><br> <input type="text" name="feb"> <br><br> <input type="text" name="feb"> </div></li>
+					<li><div class="title"> 26 <br><br><input type="text" name="feb"> <br><br> <input type="text" name="feb"> <br><br> <input type="text" name="feb"> </div></li>
+					<li><div class="title"> 27 <br><br><input type="text" name="feb"> <br><br> <input type="text" name="feb"> <br><br> <input type="text" name="feb"> </div></li>
+					<li><div class="title"> 28 <br><br><input type="text" name="feb"> <br><br> <input type="text" name="feb"> <br><br> <input type="text" name="feb"> </div></li>
+					<li><div class="title"> 29 <br><br><input type="text" name="feb"> <br><br> <input type="text" name="feb"> <br><br> <input type="text" name="feb"> </div></li>
+					<li><div class="title"> 30 <br><br><input type="text" name="feb"> <br><br> <input type="text" name="feb"> <br><br> <input type="text" name="feb"> </div></li>
+					<li><div class="title"> 31 <br><br><input type="text" name="feb"> <br><br> <input type="text" name="feb"> <br><br> <input type="text" name="feb"> </div></li>
+				</ul>
+			</div>		
+		
+			
+			
+
+			<div class="footer">
+				
+				<div class="icons">
+					<ul>
+						<li><a href="what.html"><img src="npics/gm.png" alt="" hspace="20"
+						/></a></li>	<li><a href="what.html"><img src="npics/whats.png" alt=""hspace="20"
+						/></a></li> <li><a href="what.html"><img src="npics/ig.png" alt=""hspace="20"
+						/></a></li>
+				</div>
+
+			</div>
+
+	</body>
+</html>
