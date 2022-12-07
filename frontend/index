@@ -1,0 +1,143 @@
+<html>
+	<head>	
+		<meta name="viewport" content="width=device-width, initial-scale=0.1">
+		<meta charset="UTF-8">
+		<title>home</title>
+
+		<style>
+			body {background-color: #fffff; margin: 0; padding:0; box-sizing: border-box; justify-content: center; align-items: center;} 
+			h{font-family: georgia; font-size: 50; margin-top: 0; margin-bottom: 2em; color: black;}
+			
+			nav {width: 100%; overflow-y: auto; background-color: #000000;}
+			nav ul{list-style-type: none; margin: 0; left: 50%;}
+			nav ul li{display: inline; float: right;  margin: 0px 20px; padding-top: 15px;}	nav ul li1{display: inline; float: left; color: white;  margin: 0px 20px; padding-top: 15px; font-size: 20px; }	
+			nav ul li a{color: #fdfbfb; font-size: 20px; text-decoration: none; font-family: Arial Unicode MS; } 
+			nav ul li a:hover {background: #ffffff; color: black; transition: 0.5s; text-transform: uppercase; padding: 15px;}
+			
+			.box {display: flex; padding: 0 4px; flex-wrap: wrap; }
+			.box img{margin-top: 8px; vertical-align: middle; text-align: center;}
+
+			.footer {width: 100%; height: auto; margin: auto; background: #008037; padding: 20px 0px;}
+			.icons {width: 100%; height: auto; margin: auto;}
+			.icons ul{margin: 0; padding: 0; text-align: right;}
+			.icons ul li {display: inline;}
+			
+			.sha {box-shadow: 0px 2px 4px rgba(0,0,0.5,0.5);}
+			
+			img.small {height: 700px; width: 440px; border: 2px solid white; border-radius: 70px;}
+			img.mid {height: 700px; width: 440px; border: 2px solid white; border-radius: 70px; float: right;}
+			img.lar {height: 700px; width: 440px; border: 2px solid white; border-radius: 70px; float: left;}
+			h2 {font-size: 35px} 
+			p {font-size: 20px;}
+			.con {display: flex; align-items: center;}
+			.img {max-width: 100%;}
+
+			.sec {font-size: 40;}
+			.out {padding: 1em;} 
+			section {column-count: 1; column-gap: 2em;}
+			 
+			@media only screen and (min-width: 700px) {
+			body {text-align: left; font-size: 20px;} 
+			p1 {line-height: 1.6em;}
+			section {column-count: 2; column-rule-style: solid; column-rule-color: white;} 
+			article {padding: 2em; background:  #000000;}
+			section > * {margin-top: 0;} 
+			h1 {font-size: 3rem; margin: 2em 0 1em;} 
+			.out {padding: 4em;}  
+			h1, p1 {color: #f0efed;}
+			.sec {margin: 2em 0; column-span: all; text-align: center;}
+
+
+			@media only screen and (max-width: 700px) {
+			h{font-size: 35; }
+			.box {flex: 100%; max-width: 100%;}
+
+
+			}
+
+
+		
+			
+		</style>
+	</head>
+
+		 <body> 
+			<header> 		
+				<nav role="full-horizontal"> <center>
+					<ul>   	
+						<li><a href="year.html">year</a></li>
+						<li><a href="month.html">month</a></li>
+						<li><a href="index.html">week</a></li>
+						<li><a href="about.html">day</a></li>
+						<li1> Scheduled </li1>
+					</ul>
+				</center></nav></body>
+	
+			
+			<div class="ha"><img src="pics/1.png" alt="" width="100%" /></div>
+			
+
+			<p>`</p><p>`</p>
+			<center><h>We Value Your Time</h></center>
+			<p>`</p><p>` </p> 
+
+			
+			<div class="con">
+				<div class="img">
+					<img src="pics/4.png" class="small" alt="" hspace="100" align="left"/>
+				</div>
+				<div class="txt">
+					<h2>Never Miss A Deadline</h2>
+					<p> By showing up early or on time, you can give yourself enough time to complete tasks at a comfortable pace. This can also give you more time to handle unexpected issues that can interfere with getting to work. Giving yourself more time in the morning and feeling less rushed can reduce your stress. The number one benefit of getting to work 10 or 15 minutes early is that it sets you up with a sense of calm for the rest of the day.</p>
+				</div>
+			</div>
+
+			<div class="con">
+				<div class="img">
+					<img src="pics/3.png" class="mid" alt="" hspace="100" vspace="100" align="right"/>
+				</div>
+				<div class="txt">
+					<h2>Just One Look</h2>
+					<p> By keeping such a list, you make sure that your tasks are written down all in one place so you don't forget anything important. And by prioritizing tasks, you plan the order in which you'll do them, so that you can tell what needs your immediate attention, and what you can leave until later.One of the most important reasons for keeping a to-do list is the organization. Organizing your tasks with a list can make everything much more manageable.</p>
+				</div>
+			</div>
+
+			<div class="con">
+				<div class="img">
+					<img src="pics/2.png" class="lar" alt="" hspace="100"/>
+				</div>
+				<div class="txt">
+					<h2>Save The Earth</h2>
+					<p> Going digital reduces this pressure to control air pollution. The waste produced by paper-related industries also does great harm to our ecosystem. Simply taking a digital initiative by saving your files onto a computer or online instead of on paper goes a long way in protecting the Earth. Scheduled has provided a platform to help you do that and more!
+					</p>
+				</div>
+			</div>
+
+			<p>`</p><p>`</p>
+			<center><h>More About Us</h></center>
+			
+			
+			<div class="out">
+				
+				<article>
+						
+					<section>
+						<p1> I recently fell in love with planning after seeing the vitality of properly allocating my time. I loved decorating my notes but it unfortunatly took more time than actually getting more work done plus I'd ofter forget my to-do list at home and become stranded or be forced to make a new one. So I designed a way that everyone would never have to spend unnecessary time or keep track of thier plans for the day. Scheduled has provided a platform to help you do all that and more. Here, you can have your information displayed to you as you go. I'm so excited to share this with you and with the world!
+						</p1>
+						
+
+					</section>
+				</article>
+			</div>
+
+
+
+
+
+
+
+
+
+
+	</body>
+</html>
