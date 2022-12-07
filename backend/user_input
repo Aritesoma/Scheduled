@@ -1,0 +1,34 @@
+ervername = "localhost";
+$dbusername = "root";
+$dbpassword = "";
+$dbname = "scheduled_input";
+
+$con = mysqli_connect($dbservername, $dbusername, $dbpassword, $dbname);
+
+//get the post records
+$year = $_POST['year'];
+$january = $_POST['jan'];
+$february = $_POST['feb'];
+$march = $_POST['mar'];
+$april = $_POST['apr'];
+$may = $_POST['may'];
+$june = $_POST['jun'];
+$july = $_POST['jly'];
+$august = $_POST['aug'];
+$september = $_POST['sep'];
+$october = $_POST['oct'];
+$november = $_POST['nov'];
+$december = $_POST['dec'];
+
+// database insert SQL code
+$sql = "INSERT INTO year_info ('year', 'jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jly', 'aug', 'sep', 'oct', 'nov', 'dec') VALUES ('$year', '$january', '$february', '$march', '$april', '$may', '$june', '$july', '$august', '$september', '$october', '$november', '$december')";
+
+// insert in database
+$rs = mysqli_query($con, $sql);
+
+if($rs)
+{
+	echo "Records Inserted Successfully";
+}
+
+?>
