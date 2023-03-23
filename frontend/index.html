@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0" charset="UTF-8">
+	<title> home </title>
+	<link rel="stylesheet" type="text/css" href="./style/homesty.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="img/logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="week.html">week</a></li>
+					<li><a href="month.html">month</a></li>
+					<li><a href="year.html">year</a></li>
+					<li><a href="signIn.html">sign in</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+		</nav>
+
+	<div class="text-box">
+		<h1> SCHEDULED </h1>
+		<p> Make your plans a reality</p>
+		<a href="" class="hero-btn">join in</a>
+	</div>
+			</nav>
+	</section>
+
+	<section class="course">
+		<h1>Our Mission</h1>
+		<p> to empower you to achieve your goals </p>
+
+		<div class="row">
+			<div class="course-col">
+				<h3>Never Miss A Deadline </h3>
+				<p>By showing up early or on time, you can <br>give yourself enough time to complete tasks <br>at a comfortable pace.</p>
+			</div>
+
+			<div class="course-col">
+				<h3>Just One Look</h3>
+				<p>By keeping such a list, you make sure<br> that your tasks are written down all in <br>one place so you don't forget anything <br>important.</p>
+			</div>
+
+			<div class="course-col">
+				<h3>Save The Earth </h3>
+				<p>Going digital reduces the pressure to<br> control air pollution. The waste produced<br> by paper-related industries also does <br>great harm to our ecosystem. </p>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="in">
+		<h1>More About Us</h1>
+		<div class="out">
+			<article>
+				<section class="more">
+					<p1> I recently fell in love with planning after seeing the vitality of properly allocating my time. I loved decorating my notes but it unfortunatly took more time than actually getting more work done plus I'd ofter forget my to-do list at home and become stranded or be forced to make a new one. So I designed a way that everyone would never have to spend unnecessary time or keep track of thier plans for the day. Scheduled has provided a platform to help you do all that and more. Here, you can have your information displayed to you as you go. I'm so excited to share this with you and with the world!
+					</p1>
+				</section>
+			</article>
+		</div>
+	</secttion>
+<!--
+	<section class="fac">
+		<h1>Our Duties</h1>
+		<p>i dont know what this is for</p>
+
+		<div class="fac-col">
+			<img src="img/2.png">
+			<h1> save earth </h1>
+			<p>no more cutting down trees</p>
+		</div>
+
+		<div class="fac-col">
+			<img src="img/2.png">
+			<h1> save earth </h1>
+			<p>no more cutting down trees</p>
+		</div>
+
+		<div class="fac-col">
+			<img src="img/2.png">
+			<h1> save earth </h1>
+			<p>no more cutting down trees</p>
+		</div>
+	</section>
+-->
+
+<!-- javascript for toogle menu -->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+</body>
+</html>

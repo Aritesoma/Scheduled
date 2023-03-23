@@ -1,0 +1,111 @@
+<?php 
+required 'index.php';
+
+//get the post records
+if (isset($_POST["submit"]))
+{
+$year = $_POST['year'];
+$january = $_POST['jan'];
+$february = $_POST['feb'];
+$march = $_POST['mar'];
+$april = $_POST['apr'];
+$may = $_POST['may'];
+$june = $_POST['jun'];
+$july = $_POST['jly'];
+$august = $_POST['aug'];
+$september = $_POST['sep'];
+$october = $_POST['oct'];
+$november = $_POST['nov'];
+$december = $_POST['dec'];
+}
+
+// database insert SQL code
+$sql = "INSERT INTO year_info (year, jan, feb, mar, apr, may, jun, jly, aug, sep, oct, nov, dec) VALUES ('$year', '$january', '$february', '$march', '$april', '$may', '$june', '$july', '$august', '$september', '$october', '$november', '$december')";
+
+mysqli_query($conn, $sql);
+
+echo
+"
+	<script type="text/javascript"> alert('Records Inserted Successfully');</script>
+";
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0" charset="UTF-8">
+	<title> yearly planner </title>
+	<link rel="stylesheet" type="text/css" href="./style/yearsty.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="img/logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li><a href="week.html">week</a></li>
+					<li><a href="month.html">month</a></li>
+					<li><a href="signIn.html">sign in</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+		</nav>
+
+	<div class="text-box">
+		<h1> PLAN YOUR YEAR </h1>
+		<p> Make your plans a reality</p>
+	</div>
+	</section>
+	
+	<div class="con">
+		<form action="" method="POST">
+			<center>
+				<label>INPUT YEAR: </label>
+				<input type="number" name="year">
+			</center>
+		</form>
+	</div>
+	<div class="container">
+		<ul>
+			<form action="" method="POST">
+				<center>
+					<div class="btn">
+						<input type="submit" value="retrieve" name="submit">
+						<input type="submit" value="submit" name="submit">  
+					</div>
+				</center>
+				<li> <div class="title"> JANUARY <br> <textarea name="jan" placeholder="START PLANNING HERE"></textarea></div> </li>
+				<li><div class="title"> FEBRUARY <br> <textarea name="feb" placeholder="START PLANNING HERE"></textarea> </div></li>
+				<li><div class="title"> MARCH <br> <textarea name="mar" placeholder="START PLANNING HERE"></textarea> </div></li>
+				<li><div class="title"> APRIL <br> <textarea name="apr" placeholder="START PLANNING HERE"></textarea></div></li>
+				<li><div class="title"> MAY <br> <textarea name="may" placeholder="START PLANNING HERE"></textarea> </div></li>
+				<li><div class="title"> JUNE <br> <textarea name="jun" placeholder="START PLANNING HERE"></textarea> </div></li>
+				<li><div class="title"> JULY <br> <textarea name="jly" placeholder="START PLANNING HERE"></textarea> </div></li>
+				<li><div class="title"> AUGUST <br> <textarea name="aug" placeholder="START PLANNING HERE"></textarea> </div></li>
+				<li><div class="title"> SEPTEMBER <br> <textarea name="sep" placeholder="START PLANNING HERE"></textarea> </div></li>
+				<li><div class="title"> OCTOBER <br> <textarea name="oct" placeholder="START PLANNING HERE"></textarea> </div></li>
+				<li><div class="title"> NOVEMBER <br> <textarea name="nov" placeholder="START PLANNING HERE"></textarea> </div></li>
+				<li><div class="title"> DECEMBER <br> <textarea name="dec" placeholder="START PLANNING HERE"></textarea> </div></li>
+				
+			</form>
+			
+		</ul>
+	</div>
+
+<!-- javascript for toogle menu -->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+</body>
+</html>

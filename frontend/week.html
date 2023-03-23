@@ -1,0 +1,156 @@
+<?php 
+required 'test.php';
+
+//get the post records
+if (isset($_POST["submit"]))
+{
+$week = $_POST['week'];
+$sunday = $_POST['sun'];
+$monday = $_POST['mon'];
+$tuesday = $_POST['tue'];
+$wednessday= $_POST['wed'];
+$thursday = $_POST['thu'];
+$friday = $_POST['fri'];
+$saturday = $_POST['sat'];
+}
+
+// database insert SQL code
+$sql = "INSERT INTO week_input (week, sun, mon, tue, wed, thu, fri, sat) VALUES ('$week', '$sunday', '$monday', '$tuesday', '$wednessday', '$thursday', '$friday', '$saturday')";
+
+mysqli_query($conn, $sql);
+
+echo
+"
+	<script>alert('Records Inserted Successfully');</script>
+";
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0" charset="UTF-8">
+	<title> weekly planner </title>
+	<link rel="stylesheet" type="text/css" href="./style/weeksty.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="img/logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li><a href="month.html">month</a></li>
+					<li><a href="year.html">year</a></li>
+					<li><a href="signIn.html">sign in</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+		</nav>
+
+	<div class="text-box">
+		<h1> WEEKLY PLANNER </h1>
+		<p> Make your plans a reality</p>
+	</div>
+	</section>
+
+	<div class="con">
+		<form action="" method="POST">
+			<center>
+				<label>INPUT WEEK: </label>
+				<input type="week" name="week">
+			</center>
+		</form>
+	</div>
+
+	<center>
+		<div class="btn">
+			<button type="submit" value="retrieve" name="retrieve">Retrieve</button>
+			<button type="submit" value="submit" name="submit">Submit </button> 
+		</div>
+	</center>
+
+	<div class="main">
+		<div class="register">
+			<form action="" method="POST">
+				<label> Sunday </label>
+				<textarea name="sun"></textarea>
+			</form>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="register">
+			<form action="" method="POST">
+				<label> Monday </label>
+				<textarea name="mon"></textarea>
+			</form>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="register">
+			<form action="" method="POST">
+				<label> Tuesday </label>
+				<textarea name="tue"></textarea>
+			</form>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="register">
+			<form action="" method="POST">
+				<label> Wednessday </label>
+				<textarea name="wed"></textarea>
+			</form>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="register">
+			<form action="" method="POST">
+				<label> Thursday </label>
+				<textarea name="thurs"></textarea>
+			</form>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="register">
+			<form action="" method="POST">
+				<label> Friday </label>
+				<textarea name="fri"></textarea>
+			</form>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="register">
+			<form action="" method="POST">
+				<label> Saturday </label>
+				<textarea name="sat"></textarea>
+			</form>
+		</div>
+	</div>
+
+	
+
+<!-- javascript for toogle menu -->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+
+
+
+
+
+</body>
+</html>

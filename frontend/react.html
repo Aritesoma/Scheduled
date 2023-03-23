@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0" charset="UTF-8">
+	<title> home </title>
+	<link rel="stylesheet" type="text/css" href="./style/homesty.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="img/logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="week.html">week</a></li>
+					<li><a href="month.html">month</a></li>
+					<li><a href="year.html">year</a></li>
+					<li><a href="signIn.html">sign in</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+		</nav>
+
+	<div class="text-box">
+		<h1> SCHEDULED </h1>
+		<p> Make your plans a reality</p>
+		<a href="" class="hero-btn">join in</a>
+	</div>
+			</nav>
+	</section>
+
+	<div class="course">
+		<h1>Our Mission</h1>
+		<p> to empower you to achieve your goals </p>
+		<div class="react"></div>
+	</div>
+
+
+ <script src="build\static\js\main.39e7ce5a.js"></script>
+ <script src="build\static\js\787.226f4826.chunk.js"></script>
+ 
+ <!-- build\static\js\787.226f4826.chunk.js
+ build\static\css\main.31cd00b7.css -->
+
+ <script>
+ 	ReactDOM.render(<App />, document.getElementById('root'));
+</script>
+
+	
+<!-- javascript for toogle menu -->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+</body>
+</html>
